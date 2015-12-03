@@ -5,11 +5,11 @@
 #2.12.2015 klo 20.04-20.17 (13 min)
 - Projektisuunnitelman kirjoittamista
 
-*2.12. aika yht. 1h*
+**2.12. aika yht. 1h**
 
 #3.12.2015 klo 9.44-10.11 (27 min)
 - Kurssimateriaaleihin tutustumista
-#3.12.2015 klo 18.31-19.17 (46 min)
+#3.12.2015 klo 18.31-19.19 (48 min)
 - Projektisuunnitelman kirjoittamista, avoindata.fi:n aineistoihin tutustumista ja GitHub-repositorion kanssa säätämistä (mm. lisätty aikatauluun käytetyt tunnit)
 
-*3.12. aika yht. 1h 13 min*
+**3.12. aika yht. 1h 15 min**
