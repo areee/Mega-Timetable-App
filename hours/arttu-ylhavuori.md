@@ -7,7 +7,7 @@
 ## 2.12.2015 klo 20.04-20.17 (13 min)
 - Projektisuunnitelman kirjoittamista
 
-###2.12. aika yht. 1h
+### 2.12. aika yht. 1h
 
 ## 3.12.2015 klo 9.44-10.11 (27 min)
 - Kurssimateriaaleihin tutustumista
@@ -16,6 +16,17 @@
 - Projektisuunnitelman kirjoittamista, avoindata.fi:n aineistoihin tutustumista ja GitHub-repositorion kanssa säätämistä (mm. lisätty aikatauluun käytetyt tunnit + readme)
 
 ##3.12.2015 klo 21.42-22.25 (43 min)
-- Projektin nimi ja projektisuunnitelma päivitetty lähestyskuntoon. Suunniteltu projektin työjärjestystä työparin kanssa.
+- Projektin nimi ja projektisuunnitelma päivitetty lähestyskuntoon.
+- Suunniteltu projektin työjärjestystä työparin kanssa.
 
-###3.12. aika yht. 2h
+### 3.12. aika yht. 2h
+
+## 8.12.2015 klo 10.19-11.00 (41 min)
+- Ensimmäisen iOS-applikaation ohjelmointiin tutustumista ohjeiden avulla.
+- Ongelma havaittu: Xcoden simulaattori ei toimi (näyttää pelkkää mustan ikkunan, vaikka olen ohjelmoinut sisältöä Xcodessa).
+
+## 8.12.2015 klo 11.13-11.58 (45 min)
+- Ratkaisin ongelman: MacBookini ruutu on liian pieni simulaattorille, siksi simulaattorin käynnistyksen yhteydessä ei näkynyt mitään, jos ei osannut vierittää ikkunaa alaspäin. Skaalaamalla simulaattorin kokoa 33%:een koko simulaattori mahtuu ruudulle.
+- Koodattu ensimmäistä iOS-applikaatiota.
+
+### 8.12. aika yht. 1h 26 min
