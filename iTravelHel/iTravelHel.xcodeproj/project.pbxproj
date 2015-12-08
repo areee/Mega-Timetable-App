@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0278AF121C175E0F0069078E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0278AF111C175E0F0069078E /* CoreLocation.framework */; };
 		02FA5A0D1C1750EC00A8AA1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA5A0C1C1750EC00A8AA1A /* AppDelegate.swift */; };
 		02FA5A0F1C1750EC00A8AA1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA5A0E1C1750EC00A8AA1A /* ViewController.swift */; };
 		02FA5A121C1750EC00A8AA1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02FA5A101C1750EC00A8AA1A /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0278AF111C175E0F0069078E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		02FA5A091C1750EC00A8AA1A /* iTravelHel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTravelHel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FA5A0C1C1750EC00A8AA1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02FA5A0E1C1750EC00A8AA1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0278AF121C175E0F0069078E /* CoreLocation.framework in Frameworks */,
 				02FA5A3B1C1750F700A8AA1A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +83,7 @@
 		02FA5A001C1750EC00A8AA1A = {
 			isa = PBXGroup;
 			children = (
+				0278AF111C175E0F0069078E /* CoreLocation.framework */,
 				02FA5A3A1C1750F700A8AA1A /* MapKit.framework */,
 				02FA5A0B1C1750EC00A8AA1A /* iTravelHel */,
 				02FA5A201C1750ED00A8AA1A /* iTravelHelTests */,
@@ -493,6 +497,7 @@
 				02FA5A331C1750ED00A8AA1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02FA5A341C1750ED00A8AA1A /* Build configuration list for PBXNativeTarget "iTravelHelTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +506,7 @@
 				02FA5A361C1750ED00A8AA1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02FA5A371C1750ED00A8AA1A /* Build configuration list for PBXNativeTarget "iTravelHelUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +515,7 @@
 				02FA5A391C1750ED00A8AA1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

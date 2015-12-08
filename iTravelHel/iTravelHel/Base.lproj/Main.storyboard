@@ -17,17 +17,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XXM-Vp-vDp">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XXM-Vp-vDp">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                             </mapView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XXM-Vp-vDp" secondAttribute="trailing" id="F2u-ua-skP"/>
+                            <constraint firstItem="XXM-Vp-vDp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WUa-bY-qDb"/>
+                            <constraint firstItem="XXM-Vp-vDp" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="al6-x4-0u2"/>
+                            <constraint firstItem="XXM-Vp-vDp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jEB-Dw-EdK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="XXM-Vp-vDp" id="u59-yQ-A8t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="315"/>
         </scene>
     </scenes>
 </document>
