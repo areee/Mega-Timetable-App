@@ -29,4 +29,10 @@
 - Ratkaisin ongelman: MacBookini ruutu on liian pieni simulaattorille, siksi simulaattorin käynnistyksen yhteydessä ei näkynyt mitään, jos ei osannut vierittää ikkunaa alaspäin. Skaalaamalla simulaattorin kokoa 33%:een koko simulaattori mahtuu ruudulle.
 - Koodattu ensimmäistä iOS-applikaatiota.
 
-### 8.12. aika yht. 1h 26 min
+## 8.12.2015 klo 12.31-13.50 (1h 19 min)
+- Viimeisteltiin ensimmäinen iOS-sovellus.
+- Tutustuttu HSL Reittiopas API:iin.
+- Keskusteltu projektista työparinkanssa. Pohdimme, jos appin koodaisi Objective-C:n sijaan Swift-ohjelmointikielellä. 
+- Tutustuttu Swift-ohjelmointikieleen. Ohjelmointi Swiftillä vaikuttaa Objective-C:tä yksinkertaisemmalta.
+
+### 8.12. aika yht. 2h 45 min
