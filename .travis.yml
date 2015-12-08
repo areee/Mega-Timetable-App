@@ -1,7 +1,7 @@
 language: swift
 script:
- - xctool -project iTravelHel/iTravelHel.xcodeproj -scheme iTravelHel -sdk iphonesimulator
--destination "OS=9.1,name=iPad 2"
- - xctool test -project iTravelHel/iTravelHel.xcodeproj -scheme iTravelHelTests -sdk
-iphonesimulator -destination "OS=9.1,name=iPad 2"
+  - xctool -project iTravelHel/iTravelHel.xcodeproj -scheme iTravelHel -sdk iphonesimulator
+ -destination "OS=9.1,name=iPad 2"
+  - xctool test -project iTravelHel/iTravelHel.xcodeproj -scheme iTravelHelTests -sdk
+ iphonesimulator -destination "OS=9.1,name=iPad 2"
 
