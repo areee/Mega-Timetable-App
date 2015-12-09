@@ -1,7 +1,7 @@
 language: objective-c
  
-xcode_project: iTravelHel/iTravelHel.xcodeproj
-xcode_scheme: iTravelHel/iTravelHelTests
+xcode_project: iTravelHel.xcodeproj
+xcode_scheme: iTravelHelTests
 osx_image: beta-xcode6.3
 xcode_sdk: iphonesimulator8.3 
  
