@@ -41,4 +41,7 @@
 - Suunnittelin iTravelHel-sovelluksen ulkoasua ja toimintoja kynällä ja paperilla.
 - Piirsin myös idean sovelluksen käynnistysruudusta.
 
-### 9.12. aika yht. 30 min
+## 9.12.2015 klo 21.58-23.05 (1h 7 min)
+- Opiskeltu Swiftin alkeita, opiskeltu Travis CI:n tutoriaalia.
+
+### 9.12. aika yht. 1h 37 min
