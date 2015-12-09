@@ -6,4 +6,4 @@ osx_image: beta-xcode6.3
 xcode_sdk: iphonesimulator8.3 
  
 script:
-- xcodebuild clean build test -project iTravelHel/iTravelHel.xcodeproj -scheme iTravelHel/iTravelHelTests
+- xcodebuild clean build test -project iTravelHel.xcodeproj -scheme iTravelHelTests
