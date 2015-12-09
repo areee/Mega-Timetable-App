@@ -30,9 +30,15 @@
 - Koodattu ensimmäistä iOS-applikaatiota.
 
 ## 8.12.2015 klo 12.31-13.52 (1h 21 min)
-- Viimeisteltiin ensimmäinen iOS-sovellus.
+- Viimeistelin ensimmäisen iOS-sovellukseni.
 - Tutustuttu HSL Reittiopas API:iin.
 - Keskusteltu projektista työparin kanssa. Pohdimme, jos appin koodaisi Objective-C:n sijaan Swift-ohjelmointikielellä. 
 - Tutustuttu Swift-ohjelmointikieleen. Ohjelmointi Swiftillä vaikuttaa Objective-C:tä yksinkertaisemmalta.
 
 ### 8.12. aika yht. 2h 47 min
+
+## 9.12.2015 klo 19.00-19.30 (30 min)
+- Suunnittelin iTravelHel-sovelluksen ulkoasua ja toimintoja kynällä ja paperilla.
+- Piirsin myös idean sovelluksen käynnistysruudusta.
+
+### 9.12. aika yht. 30 min
