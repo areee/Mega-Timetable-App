@@ -1,9 +1,5 @@
 language: objective-c
- 
+osx_image: xcode6.4
 xcode_project: iTravelHel.xcodeproj
-xcode_scheme: iTravelHelTests
-osx_image: beta-xcode6.3
-xcode_sdk: iphonesimulator8.3 
- 
-script:
-- xcodebuild clean build test -project iTravelHel.xcodeproj -scheme iTravelHelTests
+xcode_scheme: iTravelHel
+xcode_sdk: iphonesimulator8.4
