@@ -12,12 +12,14 @@ import CoreLocation
 
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     @IBOutlet weak var mapView: MKMapView!
-    let locationManager = CLLocationManager()
     
+    let locationManager = CLLocationManager()
+    var center = CLLocationCoordinate2D()
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // First locate user
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.requestWhenInUseAuthorization()
@@ -32,13 +34,17 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     @objc func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations.last as CLLocation!
-        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
-        self.mapView.setRegion(region, animated: true)
-        locationManager.stopUpdatingLocation()
+        self.center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError){
         print("Errors: " + error.localizedDescription)
+    }
+    
+    func centerMap(){
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
+        self.mapView.setRegion(region, animated: true)
+        locationManager.stopUpdatingLocation()
     }
 }
