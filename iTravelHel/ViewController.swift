@@ -31,12 +31,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    @objc func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let location = locations.last as CLLocation!
-        self.center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
 
-    }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError){
         print("Errors: " + error.localizedDescription)
