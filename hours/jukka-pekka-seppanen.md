@@ -7,3 +7,8 @@
 
 ## 9.12.2015 klo 21.00-23.00 (2h)
 - Travisin kanssa painiottelu
+
+## 10.12.2015 klo 10.00-17.00 (7h)
+- Projektin uudelleen alustaminen
+- Travisin kanssa painimista
+- Swift -ohjelmointikielen opiskelua
