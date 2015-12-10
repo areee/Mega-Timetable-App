@@ -46,7 +46,8 @@
 
 ### 9.12. aika yht. 1h 37 min
 
-## 10.12.2015 klo 10.11- (min)
-- Suunnittelimme työparin kanssa iTravelHel:n lopullista muotoa + tarkastelimme alustavaa sovellusta. 
+## 10.12.2015 klo 10.11-12.15 (2h 4 min)
+- Suunnittelimme työparin kanssa iTravelHel:n lopullista muotoa sekä tarkastelimme alustavaa sovellusta.
+- Opettelimme Swiftin käyttöä.
 
-### 10.12. aika yht. 
+### 10.12. aika yht. 2h 4 min
