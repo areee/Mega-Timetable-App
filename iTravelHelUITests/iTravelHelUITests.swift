@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import iTravelHel
 
 class iTravelHelUITests: XCTestCase {
         
