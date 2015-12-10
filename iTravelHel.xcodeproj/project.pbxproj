@@ -7,48 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02A75C131C19A9B4008A0AE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A75C121C19A9B4008A0AE3 /* AppDelegate.swift */; };
-		02A75C151C19A9B4008A0AE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A75C141C19A9B4008A0AE3 /* ViewController.swift */; };
-		02A75C181C19A9B4008A0AE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A75C161C19A9B4008A0AE3 /* Main.storyboard */; };
-		02A75C1B1C19A9B4008A0AE3 /* iTravelHel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02A75C191C19A9B4008A0AE3 /* iTravelHel.xcdatamodeld */; };
-		02A75C1D1C19A9B4008A0AE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A75C1C1C19A9B4008A0AE3 /* Assets.xcassets */; };
-		02A75C201C19A9B4008A0AE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A75C1E1C19A9B4008A0AE3 /* LaunchScreen.storyboard */; };
-		02A75C2B1C19A9B4008A0AE3 /* iTravelHelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A75C2A1C19A9B4008A0AE3 /* iTravelHelTests.swift */; };
+		02EC47021C19B62700E1D2D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EC47011C19B62700E1D2D4 /* AppDelegate.swift */; };
+		02EC47041C19B62700E1D2D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EC47031C19B62700E1D2D4 /* ViewController.swift */; };
+		02EC47071C19B62700E1D2D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02EC47051C19B62700E1D2D4 /* Main.storyboard */; };
+		02EC47091C19B62700E1D2D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02EC47081C19B62700E1D2D4 /* Assets.xcassets */; };
+		02EC470C1C19B62700E1D2D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02EC470A1C19B62700E1D2D4 /* LaunchScreen.storyboard */; };
+		02EC47171C19B62700E1D2D4 /* iTravelHelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EC47161C19B62700E1D2D4 /* iTravelHelTests.swift */; };
+		02EC47221C19B62700E1D2D4 /* iTravelHelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EC47211C19B62700E1D2D4 /* iTravelHelUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		02A75C271C19A9B4008A0AE3 /* PBXContainerItemProxy */ = {
+		02EC47131C19B62700E1D2D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 02A75C071C19A9B4008A0AE3 /* Project object */;
+			containerPortal = 02EC46F61C19B62700E1D2D4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 02A75C0E1C19A9B4008A0AE3;
+			remoteGlobalIDString = 02EC46FD1C19B62700E1D2D4;
+			remoteInfo = iTravelHel;
+		};
+		02EC471E1C19B62700E1D2D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02EC46F61C19B62700E1D2D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02EC46FD1C19B62700E1D2D4;
 			remoteInfo = iTravelHel;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02A75C0F1C19A9B4008A0AE3 /* iTravelHel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTravelHel.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		02A75C121C19A9B4008A0AE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		02A75C141C19A9B4008A0AE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		02A75C171C19A9B4008A0AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		02A75C1A1C19A9B4008A0AE3 /* iTravelHel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTravelHel.xcdatamodel; sourceTree = "<group>"; };
-		02A75C1C1C19A9B4008A0AE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		02A75C1F1C19A9B4008A0AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		02A75C211C19A9B4008A0AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		02A75C261C19A9B4008A0AE3 /* iTravelHelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTravelHelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		02A75C2A1C19A9B4008A0AE3 /* iTravelHelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTravelHelTests.swift; sourceTree = "<group>"; };
-		02A75C2C1C19A9B4008A0AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02EC46FE1C19B62700E1D2D4 /* iTravelHel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTravelHel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02EC47011C19B62700E1D2D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02EC47031C19B62700E1D2D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02EC47061C19B62700E1D2D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02EC47081C19B62700E1D2D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02EC470B1C19B62700E1D2D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		02EC470D1C19B62700E1D2D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02EC47121C19B62700E1D2D4 /* iTravelHelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTravelHelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02EC47161C19B62700E1D2D4 /* iTravelHelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTravelHelTests.swift; sourceTree = "<group>"; };
+		02EC47181C19B62700E1D2D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02EC471D1C19B62700E1D2D4 /* iTravelHelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTravelHelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02EC47211C19B62700E1D2D4 /* iTravelHelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTravelHelUITests.swift; sourceTree = "<group>"; };
+		02EC47231C19B62700E1D2D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		02A75C0C1C19A9B4008A0AE3 /* Frameworks */ = {
+		02EC46FB1C19B62700E1D2D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		02A75C231C19A9B4008A0AE3 /* Frameworks */ = {
+		02EC470F1C19B62700E1D2D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02EC471A1C19B62700E1D2D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -58,57 +74,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02A75C061C19A9B4008A0AE3 = {
+		02EC46F51C19B62700E1D2D4 = {
 			isa = PBXGroup;
 			children = (
-				02A75C111C19A9B4008A0AE3 /* iTravelHel */,
-				02A75C291C19A9B4008A0AE3 /* iTravelHelTests */,
-				02A75C101C19A9B4008A0AE3 /* Products */,
+				02EC47001C19B62700E1D2D4 /* iTravelHel */,
+				02EC47151C19B62700E1D2D4 /* iTravelHelTests */,
+				02EC47201C19B62700E1D2D4 /* iTravelHelUITests */,
+				02EC46FF1C19B62700E1D2D4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		02A75C101C19A9B4008A0AE3 /* Products */ = {
+		02EC46FF1C19B62700E1D2D4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				02A75C0F1C19A9B4008A0AE3 /* iTravelHel.app */,
-				02A75C261C19A9B4008A0AE3 /* iTravelHelTests.xctest */,
+				02EC46FE1C19B62700E1D2D4 /* iTravelHel.app */,
+				02EC47121C19B62700E1D2D4 /* iTravelHelTests.xctest */,
+				02EC471D1C19B62700E1D2D4 /* iTravelHelUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		02A75C111C19A9B4008A0AE3 /* iTravelHel */ = {
+		02EC47001C19B62700E1D2D4 /* iTravelHel */ = {
 			isa = PBXGroup;
 			children = (
-				02A75C121C19A9B4008A0AE3 /* AppDelegate.swift */,
-				02A75C141C19A9B4008A0AE3 /* ViewController.swift */,
-				02A75C161C19A9B4008A0AE3 /* Main.storyboard */,
-				02A75C1C1C19A9B4008A0AE3 /* Assets.xcassets */,
-				02A75C1E1C19A9B4008A0AE3 /* LaunchScreen.storyboard */,
-				02A75C211C19A9B4008A0AE3 /* Info.plist */,
-				02A75C191C19A9B4008A0AE3 /* iTravelHel.xcdatamodeld */,
+				02EC47011C19B62700E1D2D4 /* AppDelegate.swift */,
+				02EC47031C19B62700E1D2D4 /* ViewController.swift */,
+				02EC47051C19B62700E1D2D4 /* Main.storyboard */,
+				02EC47081C19B62700E1D2D4 /* Assets.xcassets */,
+				02EC470A1C19B62700E1D2D4 /* LaunchScreen.storyboard */,
+				02EC470D1C19B62700E1D2D4 /* Info.plist */,
 			);
 			path = iTravelHel;
 			sourceTree = "<group>";
 		};
-		02A75C291C19A9B4008A0AE3 /* iTravelHelTests */ = {
+		02EC47151C19B62700E1D2D4 /* iTravelHelTests */ = {
 			isa = PBXGroup;
 			children = (
-				02A75C2A1C19A9B4008A0AE3 /* iTravelHelTests.swift */,
-				02A75C2C1C19A9B4008A0AE3 /* Info.plist */,
+				02EC47161C19B62700E1D2D4 /* iTravelHelTests.swift */,
+				02EC47181C19B62700E1D2D4 /* Info.plist */,
 			);
 			path = iTravelHelTests;
+			sourceTree = "<group>";
+		};
+		02EC47201C19B62700E1D2D4 /* iTravelHelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				02EC47211C19B62700E1D2D4 /* iTravelHelUITests.swift */,
+				02EC47231C19B62700E1D2D4 /* Info.plist */,
+			);
+			path = iTravelHelUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		02A75C0E1C19A9B4008A0AE3 /* iTravelHel */ = {
+		02EC46FD1C19B62700E1D2D4 /* iTravelHel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02A75C2F1C19A9B4008A0AE3 /* Build configuration list for PBXNativeTarget "iTravelHel" */;
+			buildConfigurationList = 02EC47261C19B62700E1D2D4 /* Build configuration list for PBXNativeTarget "iTravelHel" */;
 			buildPhases = (
-				02A75C0B1C19A9B4008A0AE3 /* Sources */,
-				02A75C0C1C19A9B4008A0AE3 /* Frameworks */,
-				02A75C0D1C19A9B4008A0AE3 /* Resources */,
+				02EC46FA1C19B62700E1D2D4 /* Sources */,
+				02EC46FB1C19B62700E1D2D4 /* Frameworks */,
+				02EC46FC1C19B62700E1D2D4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -116,47 +142,69 @@
 			);
 			name = iTravelHel;
 			productName = iTravelHel;
-			productReference = 02A75C0F1C19A9B4008A0AE3 /* iTravelHel.app */;
+			productReference = 02EC46FE1C19B62700E1D2D4 /* iTravelHel.app */;
 			productType = "com.apple.product-type.application";
 		};
-		02A75C251C19A9B4008A0AE3 /* iTravelHelTests */ = {
+		02EC47111C19B62700E1D2D4 /* iTravelHelTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02A75C321C19A9B4008A0AE3 /* Build configuration list for PBXNativeTarget "iTravelHelTests" */;
+			buildConfigurationList = 02EC47291C19B62700E1D2D4 /* Build configuration list for PBXNativeTarget "iTravelHelTests" */;
 			buildPhases = (
-				02A75C221C19A9B4008A0AE3 /* Sources */,
-				02A75C231C19A9B4008A0AE3 /* Frameworks */,
-				02A75C241C19A9B4008A0AE3 /* Resources */,
+				02EC470E1C19B62700E1D2D4 /* Sources */,
+				02EC470F1C19B62700E1D2D4 /* Frameworks */,
+				02EC47101C19B62700E1D2D4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				02A75C281C19A9B4008A0AE3 /* PBXTargetDependency */,
+				02EC47141C19B62700E1D2D4 /* PBXTargetDependency */,
 			);
 			name = iTravelHelTests;
 			productName = iTravelHelTests;
-			productReference = 02A75C261C19A9B4008A0AE3 /* iTravelHelTests.xctest */;
+			productReference = 02EC47121C19B62700E1D2D4 /* iTravelHelTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		02EC471C1C19B62700E1D2D4 /* iTravelHelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02EC472C1C19B62700E1D2D4 /* Build configuration list for PBXNativeTarget "iTravelHelUITests" */;
+			buildPhases = (
+				02EC47191C19B62700E1D2D4 /* Sources */,
+				02EC471A1C19B62700E1D2D4 /* Frameworks */,
+				02EC471B1C19B62700E1D2D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02EC471F1C19B62700E1D2D4 /* PBXTargetDependency */,
+			);
+			name = iTravelHelUITests;
+			productName = iTravelHelUITests;
+			productReference = 02EC471D1C19B62700E1D2D4 /* iTravelHelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		02A75C071C19A9B4008A0AE3 /* Project object */ = {
+		02EC46F61C19B62700E1D2D4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "XCode-Popup";
 				TargetAttributes = {
-					02A75C0E1C19A9B4008A0AE3 = {
+					02EC46FD1C19B62700E1D2D4 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
-					02A75C251C19A9B4008A0AE3 = {
+					02EC47111C19B62700E1D2D4 = {
 						CreatedOnToolsVersion = 7.1.1;
-						TestTargetID = 02A75C0E1C19A9B4008A0AE3;
+						TestTargetID = 02EC46FD1C19B62700E1D2D4;
+					};
+					02EC471C1C19B62700E1D2D4 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 02EC46FD1C19B62700E1D2D4;
 					};
 				};
 			};
-			buildConfigurationList = 02A75C0A1C19A9B4008A0AE3 /* Build configuration list for PBXProject "iTravelHel" */;
+			buildConfigurationList = 02EC46F91C19B62700E1D2D4 /* Build configuration list for PBXProject "iTravelHel" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -164,29 +212,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 02A75C061C19A9B4008A0AE3;
-			productRefGroup = 02A75C101C19A9B4008A0AE3 /* Products */;
+			mainGroup = 02EC46F51C19B62700E1D2D4;
+			productRefGroup = 02EC46FF1C19B62700E1D2D4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				02A75C0E1C19A9B4008A0AE3 /* iTravelHel */,
-				02A75C251C19A9B4008A0AE3 /* iTravelHelTests */,
+				02EC46FD1C19B62700E1D2D4 /* iTravelHel */,
+				02EC47111C19B62700E1D2D4 /* iTravelHelTests */,
+				02EC471C1C19B62700E1D2D4 /* iTravelHelUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		02A75C0D1C19A9B4008A0AE3 /* Resources */ = {
+		02EC46FC1C19B62700E1D2D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02A75C201C19A9B4008A0AE3 /* LaunchScreen.storyboard in Resources */,
-				02A75C1D1C19A9B4008A0AE3 /* Assets.xcassets in Resources */,
-				02A75C181C19A9B4008A0AE3 /* Main.storyboard in Resources */,
+				02EC470C1C19B62700E1D2D4 /* LaunchScreen.storyboard in Resources */,
+				02EC47091C19B62700E1D2D4 /* Assets.xcassets in Resources */,
+				02EC47071C19B62700E1D2D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		02A75C241C19A9B4008A0AE3 /* Resources */ = {
+		02EC47101C19B62700E1D2D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02EC471B1C19B62700E1D2D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -196,47 +252,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		02A75C0B1C19A9B4008A0AE3 /* Sources */ = {
+		02EC46FA1C19B62700E1D2D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02A75C151C19A9B4008A0AE3 /* ViewController.swift in Sources */,
-				02A75C1B1C19A9B4008A0AE3 /* iTravelHel.xcdatamodeld in Sources */,
-				02A75C131C19A9B4008A0AE3 /* AppDelegate.swift in Sources */,
+				02EC47041C19B62700E1D2D4 /* ViewController.swift in Sources */,
+				02EC47021C19B62700E1D2D4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		02A75C221C19A9B4008A0AE3 /* Sources */ = {
+		02EC470E1C19B62700E1D2D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02A75C2B1C19A9B4008A0AE3 /* iTravelHelTests.swift in Sources */,
+				02EC47171C19B62700E1D2D4 /* iTravelHelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02EC47191C19B62700E1D2D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EC47221C19B62700E1D2D4 /* iTravelHelUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		02A75C281C19A9B4008A0AE3 /* PBXTargetDependency */ = {
+		02EC47141C19B62700E1D2D4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 02A75C0E1C19A9B4008A0AE3 /* iTravelHel */;
-			targetProxy = 02A75C271C19A9B4008A0AE3 /* PBXContainerItemProxy */;
+			target = 02EC46FD1C19B62700E1D2D4 /* iTravelHel */;
+			targetProxy = 02EC47131C19B62700E1D2D4 /* PBXContainerItemProxy */;
+		};
+		02EC471F1C19B62700E1D2D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02EC46FD1C19B62700E1D2D4 /* iTravelHel */;
+			targetProxy = 02EC471E1C19B62700E1D2D4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		02A75C161C19A9B4008A0AE3 /* Main.storyboard */ = {
+		02EC47051C19B62700E1D2D4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				02A75C171C19A9B4008A0AE3 /* Base */,
+				02EC47061C19B62700E1D2D4 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		02A75C1E1C19A9B4008A0AE3 /* LaunchScreen.storyboard */ = {
+		02EC470A1C19B62700E1D2D4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				02A75C1F1C19A9B4008A0AE3 /* Base */,
+				02EC470B1C19B62700E1D2D4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -244,7 +312,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		02A75C2D1C19A9B4008A0AE3 /* Debug */ = {
+		02EC47241C19B62700E1D2D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -289,7 +357,7 @@
 			};
 			name = Debug;
 		};
-		02A75C2E1C19A9B4008A0AE3 /* Release */ = {
+		02EC47251C19B62700E1D2D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -327,7 +395,7 @@
 			};
 			name = Release;
 		};
-		02A75C301C19A9B4008A0AE3 /* Debug */ = {
+		02EC47271C19B62700E1D2D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -338,7 +406,7 @@
 			};
 			name = Debug;
 		};
-		02A75C311C19A9B4008A0AE3 /* Release */ = {
+		02EC47281C19B62700E1D2D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -349,7 +417,7 @@
 			};
 			name = Release;
 		};
-		02A75C331C19A9B4008A0AE3 /* Debug */ = {
+		02EC472A1C19B62700E1D2D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -361,7 +429,7 @@
 			};
 			name = Debug;
 		};
-		02A75C341C19A9B4008A0AE3 /* Release */ = {
+		02EC472B1C19B62700E1D2D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -370,51 +438,70 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "XCode-Popup.iTravelHelTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTravelHel.app/iTravelHel";
+			};
+			name = Release;
+		};
+		02EC472D1C19B62700E1D2D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = iTravelHelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "XCode-Popup.iTravelHelUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iTravelHel;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		02EC472E1C19B62700E1D2D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = iTravelHelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "XCode-Popup.iTravelHelUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iTravelHel;
+				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		02A75C0A1C19A9B4008A0AE3 /* Build configuration list for PBXProject "iTravelHel" */ = {
+		02EC46F91C19B62700E1D2D4 /* Build configuration list for PBXProject "iTravelHel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02A75C2D1C19A9B4008A0AE3 /* Debug */,
-				02A75C2E1C19A9B4008A0AE3 /* Release */,
+				02EC47241C19B62700E1D2D4 /* Debug */,
+				02EC47251C19B62700E1D2D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		02A75C2F1C19A9B4008A0AE3 /* Build configuration list for PBXNativeTarget "iTravelHel" */ = {
+		02EC47261C19B62700E1D2D4 /* Build configuration list for PBXNativeTarget "iTravelHel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02A75C301C19A9B4008A0AE3 /* Debug */,
-				02A75C311C19A9B4008A0AE3 /* Release */,
+				02EC47271C19B62700E1D2D4 /* Debug */,
+				02EC47281C19B62700E1D2D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		02A75C321C19A9B4008A0AE3 /* Build configuration list for PBXNativeTarget "iTravelHelTests" */ = {
+		02EC47291C19B62700E1D2D4 /* Build configuration list for PBXNativeTarget "iTravelHelTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02A75C331C19A9B4008A0AE3 /* Debug */,
-				02A75C341C19A9B4008A0AE3 /* Release */,
+				02EC472A1C19B62700E1D2D4 /* Debug */,
+				02EC472B1C19B62700E1D2D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		02EC472C1C19B62700E1D2D4 /* Build configuration list for PBXNativeTarget "iTravelHelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02EC472D1C19B62700E1D2D4 /* Debug */,
+				02EC472E1C19B62700E1D2D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		02A75C191C19A9B4008A0AE3 /* iTravelHel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				02A75C1A1C19A9B4008A0AE3 /* iTravelHel.xcdatamodel */,
-			);
-			currentVersion = 02A75C1A1C19A9B4008A0AE3 /* iTravelHel.xcdatamodel */;
-			path = iTravelHel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = 02A75C071C19A9B4008A0AE3 /* Project object */;
+	rootObject = 02EC46F61C19B62700E1D2D4 /* Project object */;
 }
