@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>iTravelHel.xcscheme_^#shared#^_</key>
+		<key>iTravelHel.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>02FA5A081C1750EC00A8AA1A</key>
+		<key>02A75C0E1C19A9B4008A0AE3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>02FA5A1C1C1750ED00A8AA1A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>02FA5A271C1750ED00A8AA1A</key>
+		<key>02A75C251C19A9B4008A0AE3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

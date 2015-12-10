@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "02FA5A081C1750EC00A8AA1A"
+               BlueprintIdentifier = "02A75C0E1C19A9B4008A0AE3"
                BuildableName = "iTravelHel.app"
                BlueprintName = "iTravelHel"
                ReferencedContainer = "container:iTravelHel.xcodeproj">
@@ -32,19 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "02FA5A1C1C1750ED00A8AA1A"
+               BlueprintIdentifier = "02A75C251C19A9B4008A0AE3"
                BuildableName = "iTravelHelTests.xctest"
                BlueprintName = "iTravelHelTests"
-               ReferencedContainer = "container:iTravelHel.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "02FA5A271C1750ED00A8AA1A"
-               BuildableName = "iTravelHelUITests.xctest"
-               BlueprintName = "iTravelHelUITests"
                ReferencedContainer = "container:iTravelHel.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -52,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "02FA5A081C1750EC00A8AA1A"
+            BlueprintIdentifier = "02A75C0E1C19A9B4008A0AE3"
             BuildableName = "iTravelHel.app"
             BlueprintName = "iTravelHel"
             ReferencedContainer = "container:iTravelHel.xcodeproj">
@@ -75,7 +65,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "02FA5A081C1750EC00A8AA1A"
+            BlueprintIdentifier = "02A75C0E1C19A9B4008A0AE3"
             BuildableName = "iTravelHel.app"
             BlueprintName = "iTravelHel"
             ReferencedContainer = "container:iTravelHel.xcodeproj">
@@ -94,7 +84,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "02FA5A081C1750EC00A8AA1A"
+            BlueprintIdentifier = "02A75C0E1C19A9B4008A0AE3"
             BuildableName = "iTravelHel.app"
             BlueprintName = "iTravelHel"
             ReferencedContainer = "container:iTravelHel.xcodeproj">

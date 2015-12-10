@@ -2,7 +2,7 @@
 //  iTravelHelTests.swift
 //  iTravelHelTests
 //
-//  Created by Jukka-Pekka Seppänen on 8.12.2015.
+//  Created by Jukka-Pekka Seppänen on 10.12.2015.
 //  Copyright © 2015 XCode-Popup. All rights reserved.
 //
 
