@@ -45,3 +45,8 @@
 - Opiskeltu Swiftin alkeita, opiskeltu Travis CI:n tutoriaalia.
 
 ### 9.12. aika yht. 1h 37 min
+
+## 10.12.2015 klo (min)
+- 
+
+### 10.12. aika yht. 
