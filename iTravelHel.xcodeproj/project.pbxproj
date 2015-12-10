@@ -13,7 +13,6 @@
 		02EC47091C19B62700E1D2D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02EC47081C19B62700E1D2D4 /* Assets.xcassets */; };
 		02EC470C1C19B62700E1D2D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02EC470A1C19B62700E1D2D4 /* LaunchScreen.storyboard */; };
 		02EC47171C19B62700E1D2D4 /* iTravelHelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EC47161C19B62700E1D2D4 /* iTravelHelTests.swift */; };
-		02EC47221C19B62700E1D2D4 /* iTravelHelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EC47211C19B62700E1D2D4 /* iTravelHelUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +44,6 @@
 		02EC47161C19B62700E1D2D4 /* iTravelHelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTravelHelTests.swift; sourceTree = "<group>"; };
 		02EC47181C19B62700E1D2D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02EC471D1C19B62700E1D2D4 /* iTravelHelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTravelHelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		02EC47211C19B62700E1D2D4 /* iTravelHelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTravelHelUITests.swift; sourceTree = "<group>"; };
-		02EC47231C19B62700E1D2D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +76,6 @@
 			children = (
 				02EC47001C19B62700E1D2D4 /* iTravelHel */,
 				02EC47151C19B62700E1D2D4 /* iTravelHelTests */,
-				02EC47201C19B62700E1D2D4 /* iTravelHelUITests */,
 				02EC46FF1C19B62700E1D2D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,15 +110,6 @@
 				02EC47181C19B62700E1D2D4 /* Info.plist */,
 			);
 			path = iTravelHelTests;
-			sourceTree = "<group>";
-		};
-		02EC47201C19B62700E1D2D4 /* iTravelHelUITests */ = {
-			isa = PBXGroup;
-			children = (
-				02EC47211C19B62700E1D2D4 /* iTravelHelUITests.swift */,
-				02EC47231C19B62700E1D2D4 /* Info.plist */,
-			);
-			path = iTravelHelUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +260,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02EC47221C19B62700E1D2D4 /* iTravelHelUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +470,7 @@
 				02EC47281C19B62700E1D2D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02EC47291C19B62700E1D2D4 /* Build configuration list for PBXNativeTarget "iTravelHelTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +479,7 @@
 				02EC472B1C19B62700E1D2D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02EC472C1C19B62700E1D2D4 /* Build configuration list for PBXNativeTarget "iTravelHelUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +488,7 @@
 				02EC472E1C19B62700E1D2D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
