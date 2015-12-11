@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -23,49 +22,75 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5N-1F-HIi">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zi9-zI-s2G">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="9Lw-rx-QYk"/>
+                                    <constraint firstAttribute="height" constant="50" id="iGT-3F-drb"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="compass"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9Lw-rx-QYk"/>
+                                        <exclude reference="iGT-3F-drb"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="9Lw-rx-QYk"/>
+                                        <include reference="iGT-3F-drb"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="locateMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gV4-eB-BbN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="BEg-OO-lzc" firstAttribute="bottom" secondItem="DXI-wg-yv8" secondAttribute="top" id="9Qi-ru-Dpu"/>
-                            <constraint firstItem="P5N-1F-HIi" firstAttribute="trailing" secondItem="9TO-3W-R3G" secondAttribute="trailingMargin" id="GN1-gH-T93"/>
-                            <constraint firstAttribute="bottom" secondItem="P5N-1F-HIi" secondAttribute="bottom" constant="20" symbolic="YES" id="HV7-0k-fzd"/>
-                            <constraint firstItem="BEg-OO-lzc" firstAttribute="top" secondItem="9TO-3W-R3G" secondAttribute="top" id="I4y-Rp-bd9"/>
-                            <constraint firstAttribute="trailing" secondItem="BEg-OO-lzc" secondAttribute="trailing" id="Wkr-0h-9EW"/>
-                            <constraint firstItem="BEg-OO-lzc" firstAttribute="leading" secondItem="9TO-3W-R3G" secondAttribute="leading" id="yWf-77-eYa"/>
+                            <constraint firstAttribute="trailing" secondItem="BEg-OO-lzc" secondAttribute="trailing" id="CBC-Pf-mme"/>
+                            <constraint firstItem="BEg-OO-lzc" firstAttribute="bottom" secondItem="DXI-wg-yv8" secondAttribute="top" id="CYg-ab-bfe"/>
+                            <constraint firstItem="DXI-wg-yv8" firstAttribute="top" secondItem="zi9-zI-s2G" secondAttribute="bottom" constant="10" id="G2u-mN-M4U">
+                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="BEg-OO-lzc" firstAttribute="leading" secondItem="9TO-3W-R3G" secondAttribute="leading" id="Qwx-Rl-2vI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zi9-zI-s2G" secondAttribute="trailing" constant="10" id="n8D-Ak-BAd">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="BEg-OO-lzc" firstAttribute="top" secondItem="9TO-3W-R3G" secondAttribute="top" id="sXD-Wz-pk9"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="P5N-1F-HIi"/>
+                                <exclude reference="zi9-zI-s2G"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="GN1-gH-T93"/>
-                                <exclude reference="HV7-0k-fzd"/>
+                                <exclude reference="G2u-mN-M4U"/>
+                                <exclude reference="n8D-Ak-BAd"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="P5N-1F-HIi"/>
+                                <include reference="zi9-zI-s2G"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="GN1-gH-T93"/>
-                                <include reference="HV7-0k-fzd"/>
+                                <include reference="G2u-mN-M4U"/>
+                                <include reference="n8D-Ak-BAd"/>
                             </mask>
                         </variation>
                     </view>
+                    <keyCommands/>
                     <connections>
-                        <outlet property="locateButton" destination="P5N-1F-HIi" id="T5B-ne-Bpj"/>
                         <outlet property="mapView" destination="BEg-OO-lzc" id="dnd-xR-v9E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="244" y="281"/>
+            <point key="canvasLocation" x="243" y="280.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="compass" width="300" height="300"/>
+    </resources>
 </document>
