@@ -21,6 +21,10 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BEg-OO-lzc">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cDk-I4-xAh" appends="YES" id="dl5-Vo-I9M"/>
+                                </connections>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zi9-zI-s2G">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -66,8 +70,8 @@
                                 <exclude reference="zi9-zI-s2G"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="G2u-mN-M4U"/>
                                 <exclude reference="n8D-Ak-BAd"/>
+                                <exclude reference="G2u-mN-M4U"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -75,8 +79,8 @@
                                 <include reference="zi9-zI-s2G"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="G2u-mN-M4U"/>
                                 <include reference="n8D-Ak-BAd"/>
+                                <include reference="G2u-mN-M4U"/>
                             </mask>
                         </variation>
                     </view>
@@ -86,6 +90,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cDk-I4-xAh">
+                    <connections>
+                        <action selector="mapClick:" destination="BYZ-38-t0r" id="vrM-34-CiA"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="243" y="280.5"/>
         </scene>

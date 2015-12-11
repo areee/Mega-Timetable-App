@@ -12,7 +12,8 @@ import CoreLocation
 
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     @IBOutlet weak var mapView: MKMapView!
-    var centerMode = -1;
+
+    var centerMode = -1
     @IBAction func locateMe(sender: AnyObject) {
         centerLocation()
         centerMode++
@@ -22,18 +23,16 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     }
     
     var center = CLLocationCoordinate2D()
-    
+
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
         self.mapView.showsUserLocation = true
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -47,6 +46,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         if(centerMode == 1){
             centerLocation()
         }
+    }
+
+    @IBAction func mapClick(sender: AnyObject) {
+        centerMode = -1
     }
     
     func centerLocation(){
