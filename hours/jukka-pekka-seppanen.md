@@ -12,3 +12,9 @@
 - Projektin uudelleen alustaminen
 - Travisin kanssa painimista
 - Swift -ohjelmointikielen opiskelua
+
+## 11.12.2015 klo 15.00-20.00 (5h)
+- Käyttäjän paikantaminen napilla
+- Käyttäjän sijainnin seuraaminen
+- Käyttäjän seuraamisen lopettaminen karttaa klikkaamalla
+- Swift -ohjelmointikielen opiskelua
