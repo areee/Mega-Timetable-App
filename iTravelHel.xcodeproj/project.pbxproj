@@ -13,6 +13,8 @@
 		02EC47431C19B8E100E1D2D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02EC47421C19B8E100E1D2D4 /* Assets.xcassets */; };
 		02EC47461C19B8E100E1D2D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02EC47441C19B8E100E1D2D4 /* LaunchScreen.storyboard */; };
 		02EC47511C19B8E100E1D2D4 /* iTravelHelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EC47501C19B8E100E1D2D4 /* iTravelHelTests.swift */; };
+		02EC475C1C19C69D00E1D2D4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EC475B1C19C69D00E1D2D4 /* MapKit.framework */; };
+		02EC475E1C19C6D900E1D2D4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EC475D1C19C6D900E1D2D4 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		02EC474C1C19B8E100E1D2D4 /* iTravelHelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTravelHelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02EC47501C19B8E100E1D2D4 /* iTravelHelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTravelHelTests.swift; sourceTree = "<group>"; };
 		02EC47521C19B8E100E1D2D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02EC475B1C19C69D00E1D2D4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		02EC475D1C19C6D900E1D2D4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02EC475E1C19C6D900E1D2D4 /* CoreLocation.framework in Frameworks */,
+				02EC475C1C19C69D00E1D2D4 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,8 @@
 		02EC472F1C19B8E100E1D2D4 = {
 			isa = PBXGroup;
 			children = (
+				02EC475D1C19C6D900E1D2D4 /* CoreLocation.framework */,
+				02EC475B1C19C69D00E1D2D4 /* MapKit.framework */,
 				02EC473A1C19B8E100E1D2D4 /* iTravelHel */,
 				02EC474F1C19B8E100E1D2D4 /* iTravelHelTests */,
 				02EC47391C19B8E100E1D2D4 /* Products */,
@@ -146,6 +154,11 @@
 				TargetAttributes = {
 					02EC47371C19B8E100E1D2D4 = {
 						CreatedOnToolsVersion = 7.1.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					02EC474B1C19B8E100E1D2D4 = {
 						CreatedOnToolsVersion = 7.1.1;

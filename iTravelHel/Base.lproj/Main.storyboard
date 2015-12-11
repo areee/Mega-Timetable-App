@@ -1,25 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iTravelHel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Rfl-Am-H6g"/>
+                        <viewControllerLayoutGuide type="bottom" id="DXI-wg-yv8"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="9TO-3W-R3G">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BEg-OO-lzc">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5N-1F-HIi">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BEg-OO-lzc" firstAttribute="bottom" secondItem="DXI-wg-yv8" secondAttribute="top" id="9Qi-ru-Dpu"/>
+                            <constraint firstItem="P5N-1F-HIi" firstAttribute="trailing" secondItem="9TO-3W-R3G" secondAttribute="trailingMargin" id="GN1-gH-T93"/>
+                            <constraint firstAttribute="bottom" secondItem="P5N-1F-HIi" secondAttribute="bottom" constant="20" symbolic="YES" id="HV7-0k-fzd"/>
+                            <constraint firstItem="BEg-OO-lzc" firstAttribute="top" secondItem="9TO-3W-R3G" secondAttribute="top" id="I4y-Rp-bd9"/>
+                            <constraint firstAttribute="trailing" secondItem="BEg-OO-lzc" secondAttribute="trailing" id="Wkr-0h-9EW"/>
+                            <constraint firstItem="BEg-OO-lzc" firstAttribute="leading" secondItem="9TO-3W-R3G" secondAttribute="leading" id="yWf-77-eYa"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="P5N-1F-HIi"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="GN1-gH-T93"/>
+                                <exclude reference="HV7-0k-fzd"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="P5N-1F-HIi"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="GN1-gH-T93"/>
+                                <include reference="HV7-0k-fzd"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="locateButton" destination="P5N-1F-HIi" id="T5B-ne-Bpj"/>
+                        <outlet property="mapView" destination="BEg-OO-lzc" id="dnd-xR-v9E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="244" y="281"/>
         </scene>
     </scenes>
 </document>
