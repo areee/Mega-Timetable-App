@@ -51,3 +51,8 @@
 - Opettelimme Swiftin käyttöä.
 
 ### 10.12. aika yht. 2h 4 min
+
+## 18.12.2015 klo 21.25-23.30 (2h 5 min)
+- Opiskelin Swift-koodausta käytännön kautta: Xcoden playgroundia käyttämällä kävin läpi Applen ohjeita Swiftistä. Bongattu iBooks:sta Applen virallinen Swift-ohjekirja, jota aloin lukea.
+
+### 18.12. aika yht. 2h 5 min
