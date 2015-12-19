@@ -56,3 +56,8 @@
 - Opiskelin Swift-koodausta käytännön kautta: Xcoden playgroundia käyttämällä kävin läpi Applen ohjeita Swiftistä. Bongattu iBooks:sta Applen virallinen Swift-ohjekirja, jota aloin lukea.
 
 ### 18.12. aika yht. 2h 5 min
+
+## 19.12.2015 klo 13.28-13.45 (17 min) ja klo 15.41-15.48 (7 min)
+- Swift-kielen opiskelua lukien The Swift Programming Language (Swift 2.2 Edition) -e-kirjaa
+
+### 19.12. aika yht. 24 min
