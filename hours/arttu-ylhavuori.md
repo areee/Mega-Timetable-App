@@ -57,7 +57,12 @@
 
 ### 18.12. aika yht. 2h 5 min
 
-## 19.12.2015 klo 13.28-13.45 (17 min) ja klo 15.41-15.48 (7 min)
+## 19.12.2015 klo 13.28-13.45 (17 min), klo 15.41-15.48 (7 min), klo 23.07-23.15 (8 min)
 - Swift-kielen opiskelua lukien The Swift Programming Language (Swift 2.2 Edition) -e-kirjaa
 
-### 19.12. aika yht. 24 min
+### 19.12. aika yht. 32 min
+
+## 20.12. klo 12.13-12.19 (6 min), klo 12.22-12.30 (8 min), klo 21.59-22.18 (19 min)
+- Swift-kielen opiskelua
+
+### 20.12. aika yht. 33 min
