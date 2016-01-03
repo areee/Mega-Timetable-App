@@ -7,7 +7,7 @@
 ## 2.12.2015 klo 20.04-20.17 (13 min)
 - Projektisuunnitelman kirjoittamista
 
-### 2.12. aika yht. 1h
+### 2.12. aika yht. 1h = 60 min
 
 ## 3.12.2015 klo 9.44-10.11 (27 min)
 - Kurssimateriaaleihin tutustumista
@@ -19,7 +19,7 @@
 - Projektin nimi ja projektisuunnitelma päivitetty lähestyskuntoon.
 - Suunniteltu projektin työjärjestystä työparin kanssa.
 
-### 3.12. aika yht. 2h
+### 3.12. aika yht. 2h = 120 min
 
 ## 8.12.2015 klo 10.19-11.00 (41 min)
 - Ensimmäisen iOS-applikaation ohjelmointiin tutustumista ohjeiden avulla.
@@ -35,7 +35,7 @@
 - Keskusteltu projektista työparin kanssa. Pohdimme, jos appin koodaisi Objective-C:n sijaan Swift-ohjelmointikielellä. 
 - Tutustuttu Swift-ohjelmointikieleen. Ohjelmointi Swiftillä vaikuttaa Objective-C:tä yksinkertaisemmalta.
 
-### 8.12. aika yht. 2h 47 min
+### 8.12. aika yht. 2h 47 min = 167 min
 
 ## 9.12.2015 klo 19.00-19.30 (30 min)
 - Suunnittelin iTravelHel-sovelluksen ulkoasua ja toimintoja kynällä ja paperilla.
@@ -44,10 +44,51 @@
 ## 9.12.2015 klo 21.58-23.05 (1h 7 min)
 - Opiskeltu Swiftin alkeita + Travis CI:n tutoriaalia.
 
-### 9.12. aika yht. 1h 37 min
+### 9.12. aika yht. 1h 37 min = 97 min
 
 ## 10.12.2015 klo 10.11-12.15 (2h 4 min)
 - Suunnittelimme työparin kanssa iTravelHel:n lopullista muotoa sekä tarkastelimme alustavaa sovellusta.
 - Opettelimme Swiftin käyttöä.
 
-### 10.12. aika yht. 2h 4 min
+### 10.12. aika yht. 2h 4 min = 124 min
+
+## 18.12.2015 klo 21.25-23.30 (2h 5 min)
+- Opiskelin Swift-koodausta käytännön kautta: Xcoden playgroundia käyttämällä kävin läpi Applen ohjeita Swiftistä. Bongattu iBooks:sta Applen virallinen Swift-ohjekirja, jota aloin lukea.
+
+### 18.12. aika yht. 2h 5 min = 125 min
+
+## 19.12.2015 klo 13.28-13.45 (17 min), klo 15.41-15.48 (7 min), klo 23.07-23.15 (8 min)
+- Swift-kielen opiskelua lukien The Swift Programming Language (Swift 2.2 Edition) -e-kirjaa
+
+### 19.12. aika yht. 32 min
+
+## 20.12. klo 12.13-12.19 (6 min), klo 12.22-12.30 (8 min), klo 21.59-22.18 (19 min)
+- Swift-kielen opiskelua
+
+### 20.12. aika yht. 33 min
+
+## 21.12. klo 15.40-15.47 (7 min), klo 22.47-22.57 (10 min)
+- Swift-kielen opiskelua
+
+### 21.12. aika yht. 17 min
+
+## 22.12. klo 23.16-23.18 (2 min)
+- Swift-kielen opiskelua
+
+### 22.12. aika yht. 2 min
+
+## 23.12.2015 klo 12.03-12.55 (52 min), klo 18.08-18.21 (13 min), klo 18.33-19.00 (27 min)
+- Swift-kielen opiskelua
+
+### 23.12. aika yht. 1h 32 min = 92 min
+
+## Joulukuun ajankäyttö yhteensä:
+- 60+120+167+97+124+125+32+33+17+2+92 (min) = 869 (min) ≈ 14,48 (h)
+
+## 1.1.2016 klo 22.00-23.23 (1h 23 min)
+- projektin ajankäytön päivitys
+- projektin nykytilanteen tarkastelua katsastamalla nykyinen sovellus Xcodessa
+- Swift-kielen opiskelua em. e-kirjasta
+- perehdytty HSL:n HTTP Get Interfacen toimintaideaan + HSL:n Stops in area -API:iin
+
+### 1.1. aika yht. 1h 23 min
