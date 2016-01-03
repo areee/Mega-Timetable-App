@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loader" translatesAutoresizingMaskIntoConstraints="NO" id="6Gh-gM-kpP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loader" translatesAutoresizingMaskIntoConstraints="NO" id="w2m-pQ-bi1">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
                             </imageView>
@@ -25,31 +25,31 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6Gh-gM-kpP" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="8mX-sJ-Acf"/>
-                            <constraint firstAttribute="trailing" secondItem="6Gh-gM-kpP" secondAttribute="trailing" id="eoZ-Y8-L0G"/>
-                            <constraint firstItem="6Gh-gM-kpP" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="w07-U2-wGZ"/>
-                            <constraint firstItem="6Gh-gM-kpP" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="yj3-Ge-aA0"/>
+                            <constraint firstItem="w2m-pQ-bi1" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="QGb-mf-m6J"/>
+                            <constraint firstItem="w2m-pQ-bi1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Zyh-KC-qsy"/>
+                            <constraint firstAttribute="trailing" secondItem="w2m-pQ-bi1" secondAttribute="trailing" id="bxD-E2-ifn"/>
+                            <constraint firstItem="w2m-pQ-bi1" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="man-a9-IzE"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="6Gh-gM-kpP"/>
+                                <exclude reference="w2m-pQ-bi1"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="8mX-sJ-Acf"/>
-                                <exclude reference="eoZ-Y8-L0G"/>
-                                <exclude reference="w07-U2-wGZ"/>
-                                <exclude reference="yj3-Ge-aA0"/>
+                                <exclude reference="QGb-mf-m6J"/>
+                                <exclude reference="Zyh-KC-qsy"/>
+                                <exclude reference="bxD-E2-ifn"/>
+                                <exclude reference="man-a9-IzE"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="6Gh-gM-kpP"/>
+                                <include reference="w2m-pQ-bi1"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="8mX-sJ-Acf"/>
-                                <include reference="eoZ-Y8-L0G"/>
-                                <include reference="w07-U2-wGZ"/>
-                                <include reference="yj3-Ge-aA0"/>
+                                <include reference="QGb-mf-m6J"/>
+                                <include reference="Zyh-KC-qsy"/>
+                                <include reference="bxD-E2-ifn"/>
+                                <include reference="man-a9-IzE"/>
                             </mask>
                         </variation>
                     </view>
