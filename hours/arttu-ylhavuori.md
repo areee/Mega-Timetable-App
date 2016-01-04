@@ -92,3 +92,9 @@
 - perehdytty HSL:n HTTP Get Interfacen toimintaideaan + HSL:n Stops in area -API:iin
 
 ### 1.1. aika yht. 1h 23 min
+
+## 4.1.2016 klo 21.57-23.04 (1h 7 min)
+- lisätty kommentteja ViewControllerin koodiin
+- aloitettu bussipysäkkitoiminnallisuuden työstäminen
+
+### 4.1. aika yht. 1h 7 min

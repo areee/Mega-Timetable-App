@@ -14,7 +14,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     @IBOutlet weak var mapView: MKMapView!
 
     var centerMode = -1
-    @IBAction func locateMe(sender: AnyObject) {
+    @IBAction func locateMe(sender: AnyObject) { // a functionality for clicking the locating button
         centerLocation()
         centerMode++
         if(centerMode > 1){
@@ -48,7 +48,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         }
     }
 
-    @IBAction func mapClick(sender: AnyObject) {
+    @IBAction func mapClick(sender: AnyObject) { // recognizes if somebody taps the screen
         centerMode = -1
     }
     
@@ -56,6 +56,21 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         let zoomLevel = locationManager.location!.horizontalAccuracy * 0.00010
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: zoomLevel, longitudeDelta: zoomLevel))
         self.mapView.setRegion(region, animated: true)
+    }
+    
+    func busStops(){
+        // 1. must know the current location with coordinates
+        var currentLocation = self.locationManager.location
+        var currentLocationString = String(currentLocation)
+        
+        // 2. make a HTTP request to HSL API (notice that Map Kit uses a Mercator map protection)
+        let url = NSURL(string: "http://api.reittiopas.fi/hsl/prod/?request=stops_area&user=reittiapiconnection&pass=reittiaplikaatio&format=txt&center_coordinate="+currentLocationString+"&limit=20&diameter=1500&epsg_in=mercator&epsg_out=mercator")
+        
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url!){(data, response, error) in println(NSString(data: data, encoding: NSUTF8StringEncoding))}
+            task.resume()
+        
+        // 3. set the nearby bus stops to the map with pins
+
     }
 }
 
