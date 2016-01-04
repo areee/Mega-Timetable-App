@@ -18,3 +18,16 @@
 - Käyttäjän sijainnin seuraaminen
 - Käyttäjän seuraamisen lopettaminen karttaa klikkaamalla
 - Swift -ohjelmointikielen opiskelua
+
+
+## 20.12.2015 klo 19.00-23.00 (4h)
+- Switft -ohjelmointikielen opiskelua
+- Graafista suunnittelua ja toimintojen kuvaamista
+
+## 27.12.2015 klo 15.00-20.00 (5h)
+- Swift -ohjelmointikielen opiskelua
+- Luokkakaavioita ja graafista suunnittelua
+
+
+## 28.12.2015 klo 18.00-21.00 (3h)
+- Swift -ohjelmointikielen opiskelua
