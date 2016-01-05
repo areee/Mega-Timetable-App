@@ -31,3 +31,9 @@
 
 ## 28.12.2015 klo 18.00-21.00 (3h)
 - Swift -ohjelmointikielen opiskelua
+
+## 3.1.2015 klo 16.00-20.00 (4h)
+- JSON Parse
+
+## 5.1.2015 klo 16.00-21.00 (5h)
+- Bussipysäkkejä kartalle (JSON parse)
