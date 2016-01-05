@@ -43,8 +43,8 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
         if(centerMode){
             centerLocation()
+             getStopsFromArea()
         }
-        getStopsFromArea(locations.last)
     }
 
     @IBAction func mapClick(sender: AnyObject) { // recognizes if somebody taps the screen
@@ -57,18 +57,16 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         self.mapView.setRegion(region, animated: true)
     }
     
-    func getStopsFromArea(location: CLLocationCoordinate2D){
-        
-        let currentLocation = self.locationManager.location
-        let currentLocationString = String(currentLocation)
-        
-        /* 2. make a HTTP request to HSL API (notice that Map Kit uses a Mercator map protection)
-        let url = NSURL(string: "http://api.reittiopas.fi/hsl/prod/?request=stops_area&user=reittiapiconnection&pass=reittiaplikaatio&format=txt&center_coordinate="+currentLocationString+"&limit=20&diameter=1500&epsg_in=mercator&epsg_out=mercator") */
+    func getStopsFromArea(){
+        let latitude = self.locationManager.location!.coordinate.latitude
+        let latitudeString = String(latitude)
+        let longitude = self.locationManager.location!.coordinate.longitude
+        let longitudeString = String(longitude)
         
         do {
-            let contents = try String(contentsOfURL: NSURL(string: "http://outdoorathletics.fi/stopsinarea.php?" + currentLocationString)!, usedEncoding: nil)
+            let contents = try String(contentsOfURL: NSURL(string: "http://outdoorathletics.fi/stopsinarea.php?x=" + longitudeString + "&y=" + latitudeString)!, usedEncoding: nil)
             let jsonData = convertStringToDictionary(contents)
-            getStopCoordinates(jsonData!)
+            stopsOnMap(jsonData!)
         } catch {
             print("Contents could not be loaded")
         }
@@ -88,23 +86,22 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     }
     func stopsOnMap(jsonData : [String:AnyObject]){
         
-        let newYorkLocation = CLLocationCoordinate2DMake(40.730872, -74.003066)
-        // Drop a pin
-        let dropPin = MKPointAnnotation()
-        dropPin.coordinate = newYorkLocation
-        dropPin.title = "Pysäkki"
-        dropPin.subtitle = "Busseja"
-        mapView.addAnnotation(dropPin)
+        for var index = 0; index < jsonData["stops"]!.count; ++index {
+            let stop = jsonData["stops"]![index]["coords"]!
+            var coorArray = stop!.componentsSeparatedByString(",")
+            let longitudeString: Double = Double(coorArray [0])!
+            let latitudeString: Double = Double(coorArray [1])!
+            let stopLocation : CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: latitudeString, longitude: longitudeString)
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = stopLocation
+            annotation.title = String(jsonData["stops"]![index]["name"])
+            annotation.subtitle = String(jsonData["stops"]![index]["address"])
+            mapView.addAnnotation(annotation)
+        }
         
+           //
         
-        // print(jsonData)
     }
     
-    func getStopCoordinates(jsonData : [String:AnyObject]!){
-        for var index = 0; index < jsonData["stops"]!.count; ++index {
-            let code = jsonData["stops"]![index]["code"]!
-            print(code!)
-        }
-    }
 }
 
