@@ -99,7 +99,10 @@
 
 ### 4.1. aika yht. 1h 10 min
 
-## 5.1.2016 klo 21.04- ()
-- 
+## 5.1.2016 klo 21.04-23.25 (2h 21 min)
+- palaveroitu työparini kanssa projektin tulevaisuudesta
+- selvitetty, mitä vielä pitää lisätä sovellukseen
+- luettu materiaalia
+- lisätty kommentteja
 
-### 5.1. aika yht. 
+### 5.1. aika yht. 2h 21 min
