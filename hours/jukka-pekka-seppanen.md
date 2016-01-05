@@ -35,5 +35,5 @@
 ## 3.1.2015 klo 16.00-20.00 (4h)
 - JSON Parse
 
-## 5.1.2015 klo 16.00-21.00 (5h)
+## 5.1.2015 klo 16.00-23.00 (7h)
 - Bussipysäkkejä kartalle (JSON parse)
