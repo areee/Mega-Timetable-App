@@ -3,6 +3,7 @@
 //  iTravelHel
 //
 //  Created by Jukka-Pekka Seppänen on 10.12.2015.
+//  Edited by Jukka-Pekka Seppänen & Arttu Ylhävuori
 //  Copyright © 2015 XCode-Popup. All rights reserved.
 //
 
@@ -57,13 +58,14 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         self.mapView.setRegion(region, animated: true)
     }
     
-    func getStopsFromArea(){
+    func getStopsFromArea(){ // adds nearby bus stops to the map
+        // first locates the user by using latitude and longitude values:
         let latitude = self.locationManager.location!.coordinate.latitude
         let latitudeString = String(latitude)
         let longitude = self.locationManager.location!.coordinate.longitude
         let longitudeString = String(longitude)
         
-        do {
+        do {// searches data from HSL API by using php and JSON
             let contents = try String(contentsOfURL: NSURL(string: "http://outdoorathletics.fi/stopsinarea.php?x=" + longitudeString + "&y=" + latitudeString)!, usedEncoding: nil)
             let jsonData = convertStringToDictionary(contents)
             stopsOnMap(jsonData!)
@@ -98,10 +100,17 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             annotation.subtitle = String(jsonData["stops"]![index]["address"])
             mapView.addAnnotation(annotation)
         }
-        
-           //
+    }
+    // add bus numbers and driving times to bus stops
+    
+    func busInformation(){
         
     }
+    
+    // empty the map before downloading the new pins
+    
+    // add a thread where to update all the bus stop information in every 10 second (etc.)
+    // http://stackoverflow.com/a/30841417
     
 }
 
