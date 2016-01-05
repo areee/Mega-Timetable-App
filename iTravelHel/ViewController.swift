@@ -13,13 +13,10 @@ import CoreLocation
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     @IBOutlet weak var mapView: MKMapView!
 
-    var centerMode = -1
+    var centerMode = false
     @IBAction func locateMe(sender: AnyObject) { // a functionality for clicking the locating button
         centerLocation()
-        centerMode++
-        if(centerMode > 1){
-            centerMode = -1;
-        }
+        centerMode = true
     }
     
     var center = CLLocationCoordinate2D()
@@ -33,6 +30,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
         self.mapView.showsUserLocation = true
+        getStopsFromArea()
     }
     
     override func didReceiveMemoryWarning() {
@@ -43,13 +41,14 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations.last
         center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
-        if(centerMode == 1){
+        if(centerMode){
             centerLocation()
         }
+        getStopsFromArea(locations.last)
     }
 
     @IBAction func mapClick(sender: AnyObject) { // recognizes if somebody taps the screen
-        centerMode = -1
+        centerMode = false
     }
     
     func centerLocation(){
@@ -58,19 +57,54 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         self.mapView.setRegion(region, animated: true)
     }
     
-    func busStops(){
-        // 1. must know the current location with coordinates
-        var currentLocation = self.locationManager.location
-        var currentLocationString = String(currentLocation)
+    func getStopsFromArea(location: CLLocationCoordinate2D){
         
-        // 2. make a HTTP request to HSL API (notice that Map Kit uses a Mercator map protection)
-        let url = NSURL(string: "http://api.reittiopas.fi/hsl/prod/?request=stops_area&user=reittiapiconnection&pass=reittiaplikaatio&format=txt&center_coordinate="+currentLocationString+"&limit=20&diameter=1500&epsg_in=mercator&epsg_out=mercator")
+        let currentLocation = self.locationManager.location
+        let currentLocationString = String(currentLocation)
         
-        let task = NSURLSession.sharedSession().dataTaskWithURL(url!){(data, response, error) in println(NSString(data: data, encoding: NSUTF8StringEncoding))}
-            task.resume()
+        /* 2. make a HTTP request to HSL API (notice that Map Kit uses a Mercator map protection)
+        let url = NSURL(string: "http://api.reittiopas.fi/hsl/prod/?request=stops_area&user=reittiapiconnection&pass=reittiaplikaatio&format=txt&center_coordinate="+currentLocationString+"&limit=20&diameter=1500&epsg_in=mercator&epsg_out=mercator") */
         
-        // 3. set the nearby bus stops to the map with pins
-
+        do {
+            let contents = try String(contentsOfURL: NSURL(string: "http://outdoorathletics.fi/stopsinarea.php?" + currentLocationString)!, usedEncoding: nil)
+            let jsonData = convertStringToDictionary(contents)
+            getStopCoordinates(jsonData!)
+        } catch {
+            print("Contents could not be loaded")
+        }
+    }
+    
+    func convertStringToDictionary(text: String) -> [String:AnyObject]? {
+        if let data = text.dataUsingEncoding(NSUTF8StringEncoding) {
+            do {
+                let json = try NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers) as? [String:AnyObject]
+                //print(json!["stops"]!.count)
+                return json
+            } catch {
+                print("JSON couldn't be parsed")
+            }
+        }
+        return nil
+    }
+    func stopsOnMap(jsonData : [String:AnyObject]){
+        
+        let newYorkLocation = CLLocationCoordinate2DMake(40.730872, -74.003066)
+        // Drop a pin
+        let dropPin = MKPointAnnotation()
+        dropPin.coordinate = newYorkLocation
+        dropPin.title = "Pysäkki"
+        dropPin.subtitle = "Busseja"
+        mapView.addAnnotation(dropPin)
+        
+        
+        // print(jsonData)
+    }
+    
+    func getStopCoordinates(jsonData : [String:AnyObject]!){
+        for var index = 0; index < jsonData["stops"]!.count; ++index {
+            let code = jsonData["stops"]![index]["code"]!
+            print(code!)
+        }
     }
 }
 
