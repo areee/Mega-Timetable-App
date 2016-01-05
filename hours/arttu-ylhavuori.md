@@ -98,3 +98,8 @@
 - aloitettu bussipysäkkitoiminnallisuuden työstäminen
 
 ### 4.1. aika yht. 1h 10 min
+
+## 5.1.2016 klo 21.04- ()
+- 
+
+### 5.1. aika yht. 
