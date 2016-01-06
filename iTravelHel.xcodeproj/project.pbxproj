@@ -401,6 +401,7 @@
 				02EC47571C19B8E100E1D2D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02EC47581C19B8E100E1D2D4 /* Build configuration list for PBXNativeTarget "iTravelHelTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +410,7 @@
 				02EC475A1C19B8E100E1D2D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
