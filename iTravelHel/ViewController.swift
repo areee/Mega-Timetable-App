@@ -64,13 +64,13 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         self.mapView.setRegion(region, animated: true)
     }
     
-    func getStopsFromArea(){ // get stops from certain area (around user location)
+    func getStopsFromArea(){ // get stops from certain area (around user's location)
         let latitude = self.locationManager.location!.coordinate.latitude
         let latitudeString = String(latitude)
         let longitude = self.locationManager.location!.coordinate.longitude
         let longitudeString = String(longitude)
         
-        do {// searches data from HSL API by using php and JSON
+        do { // searches data from HSL API by using php and JSON
             let contents = try String(contentsOfURL: NSURL(string: "http://outdoorathletics.fi/stopsinarea.php?x=" + longitudeString + "&y=" + latitudeString)!, usedEncoding: nil)
             let jsonData = convertStringToDictionary(contents)
             if(jsonData != nil){
