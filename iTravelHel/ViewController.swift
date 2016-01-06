@@ -57,7 +57,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         self.mapView.setRegion(region, animated: true)
     }
     
-    func getStopsFromArea(){
+    func getStopsFromArea(){ // get stops from certain area (around user location)
         let latitude = self.locationManager.location!.coordinate.latitude
         let latitudeString = String(latitude)
         let longitude = self.locationManager.location!.coordinate.longitude
@@ -72,11 +72,21 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         }
     }
     
-    func convertStringToDictionary(text: String) -> [String:AnyObject]? {
+    func getStopInfo(stopID : String) -> [String:AnyObject]?{ // return stop information
+        do {
+            let contents = try String(contentsOfURL: NSURL(string: "http://outdoorathletics.fi/stopinfo.php?id=" + stopID)!, usedEncoding: nil)
+            let jsonData = convertStringToDictionary(contents)!
+            return jsonData
+        } catch {
+            print("Contents could not be loaded")
+        }
+        return nil
+    }
+    
+    func convertStringToDictionary(text: String) -> [String:AnyObject]? { // convert json data to dictionary
         if let data = text.dataUsingEncoding(NSUTF8StringEncoding) {
             do {
                 let json = try NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers) as? [String:AnyObject]
-                //print(json!["stops"]!.count)
                 return json
             } catch {
                 print("JSON couldn't be parsed")
@@ -84,9 +94,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         }
         return nil
     }
-    func stopsOnMap(jsonData : [String:AnyObject]){
+    func stopsOnMap(jsonData : [String:AnyObject]){ // show stop information
         
         for var index = 0; index < jsonData["stops"]!.count; ++index {
+            
             let stop = jsonData["stops"]![index]["coords"]!
             var coorArray = stop!.componentsSeparatedByString(",")
             let longitudeString: Double = Double(coorArray [0])!
@@ -94,13 +105,36 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             let stopLocation : CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: latitudeString, longitude: longitudeString)
             let annotation = MKPointAnnotation()
             annotation.coordinate = stopLocation
-            annotation.title = String(jsonData["stops"]![index]["name"])
-            annotation.subtitle = String(jsonData["stops"]![index]["address"])
+            
+            let name = jsonData["stops"]![index]["name"] as! String!
+            let road = jsonData["stops"]![index]["address"] as! String!
+            let city = jsonData["stops"]![index]["city"] as! String!
+            let address = road + " / " + city
+            let stopInfo = getStopInfo(jsonData["stops"]![index]["code"] as! String!)
+            print(stopInfo!["stopinfo"]![0]["departures"])
+            
+            let timeTableLink = stopInfo!["stopinfo"]![0]["timetable_link"] as! String!
+            //let lines = stopInfo["stopinfo"]!["lines"]
+            //let departures = stopInfo["stopinfo"]!["departures"]
+           // print(stopInfo)
+            annotation.title = name
+            annotation.subtitle = timeTableLink
+            //annotation.subtitle = timeTableLink as! String!
+            mapViews(mapView, viewForAnnotation: annotation).annotation = annotation
             mapView.addAnnotation(annotation)
+        
         }
-        
-           //
-        
+    }
+    
+    func mapViews(mapView: MKMapView!,
+        viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+            let reuseId = "pin"
+            var pinView : MKAnnotationView
+            
+                pinView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+            pinView.image = UIImage(named:"bus-stop-sign")!
+            
+            return pinView
     }
     
 }
