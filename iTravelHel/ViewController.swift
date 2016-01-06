@@ -31,7 +31,12 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
         self.mapView.showsUserLocation = true
-        getStopsFromArea()
+        
+        backgroundThread(10.0, background: {
+            self.mapView.removeAnnotations(self.mapView.annotations)
+            self.getStopsFromArea()
+        })
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -45,6 +50,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         if(centerMode){
             centerLocation()
              getStopsFromArea()
+            centerMode = false;
         }
     }
 
@@ -67,7 +73,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         do {// searches data from HSL API by using php and JSON
             let contents = try String(contentsOfURL: NSURL(string: "http://outdoorathletics.fi/stopsinarea.php?x=" + longitudeString + "&y=" + latitudeString)!, usedEncoding: nil)
             let jsonData = convertStringToDictionary(contents)
-            stopsOnMap(jsonData!)
+            if(jsonData != nil){
+                           stopsOnMap(jsonData!)
+            }
+
         } catch {
             print("Contents could not be loaded")
         }
@@ -111,15 +120,24 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             let road = jsonData["stops"]![index]["address"] as! String!
             let city = jsonData["stops"]![index]["city"] as! String!
             let address = road + " / " + city
-            let stopInfo = getStopInfo(jsonData["stops"]![index]["code"] as! String!)
-            print(stopInfo!["stopinfo"]![0]["departures"])
             
+            var subtitle : String = ""
+            
+            let stopInfo = getStopInfo(jsonData["stops"]![index]["code"] as! String!)
+            for var departureTime = 0; departureTime < stopInfo!["stopinfo"]![0]["departures"]!!.count; ++departureTime{
+                let info = stopInfo!["stopinfo"]![0]["departures"]!![departureTime]["time"] as! Int!
+               let destination = stopInfo!["stopinfo"]![0]["lines"]!![0]
+                var destArray = destination!.componentsSeparatedByString(":")
+                
+                let hours = info / 100
+                let minutes = info - (hours*100)
+                subtitle += "" + String(hours) + ":" + String(minutes) + " " + destArray[1] + "\n"
+            }
+            print(subtitle)
+            let distance = jsonData["stops"]![index]["dist"] as! Int!
             let timeTableLink = stopInfo!["stopinfo"]![0]["timetable_link"] as! String!
-            //let lines = stopInfo["stopinfo"]!["lines"]
-            //let departures = stopInfo["stopinfo"]!["departures"]
-           // print(stopInfo)
-            annotation.title = name
-            annotation.subtitle = timeTableLink
+            annotation.title = name + " (" + String(distance) + " m )"
+            annotation.subtitle = subtitle
             //annotation.subtitle = timeTableLink as! String!
             mapViews(mapView, viewForAnnotation: annotation).annotation = annotation
             mapView.addAnnotation(annotation)
@@ -137,10 +155,16 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             return pinView
     }
     
-    // empty the map before downloading the new pins
-    
-    // add a thread where to update all the bus stop information in every 10 second (etc.)
-    // http://stackoverflow.com/a/30841417
+    func backgroundThread(delay: Double = 0.0, background: (() -> Void)? = nil, completion: (() -> Void)? = nil) {
+        dispatch_async(dispatch_get_global_queue(Int(QOS_CLASS_USER_INITIATED.rawValue), 0)) {
+            if(background != nil){ background!(); }
+            
+            let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay * Double(NSEC_PER_SEC)))
+            dispatch_after(popTime, dispatch_get_main_queue()) {
+                if(completion != nil){ completion!(); }
+            }
+        }
+    }
     
 }
 
