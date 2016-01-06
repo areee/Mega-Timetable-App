@@ -107,8 +107,8 @@
 
 ### 5.1. aika yht. 2h 23 min
 
-## 6.1.2016 klo 11.50-12.35 (45 min)
+## 6.1.2016 klo 11.50-12.38 (48 min)
 - palaveroitu työparini kanssa projektin tulevaisuudesta
 - lisätty sovellukseen sovellusikoni
 
-### 6.1. aika yht. 45 min
+### 6.1. aika yht. 48 min
