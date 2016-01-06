@@ -38,5 +38,5 @@
 ## 5.1.2015 klo 16.00-23.00 (7h)
 - Bussipysäkkejä kartalle (JSON parse)
 
-## 6.1.2016 klo 15.00-18.00 (3h)
+## 6.1.2016 klo 15.00-20.00 (5h)
 - Yksittäisen pysäkin tietojen haku
