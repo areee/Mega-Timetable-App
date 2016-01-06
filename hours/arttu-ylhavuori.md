@@ -111,9 +111,9 @@
 - palaveroitu työparini kanssa projektin tulevaisuudesta
 - lisätty sovellukseen sovellusikoni
 
-## klo 21.04-22.55 (1h 51 min)
+## klo 21.04-23.00 (1h 56 min)
 - tutustuttu iOS Developer Libraryn aineistoihin
 - läpikäyty koodia siistimismielessä
 - päivitetty sovellusikoni toimivaksi (ikonin kokoja muokattu)
 
-### 6.1. aika yht. 2h 39 min = 159 min
+### 6.1. aika yht. 2h 44 min = 164 min
