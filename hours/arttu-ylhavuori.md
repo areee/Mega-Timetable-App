@@ -91,13 +91,13 @@
 - Swift-kielen opiskelua em. e-kirjasta
 - perehdytty HSL:n HTTP Get Interfacen toimintaideaan + HSL:n Stops in area -API:iin
 
-### 1.1. aika yht. 1h 23 min
+### 1.1. aika yht. 1h 23 min = 83 min
 
 ## 4.1.2016 klo 21.57-23.07 (1h 10 min)
 - lisätty kommentteja ViewControllerin koodiin
 - aloitettu bussipysäkkitoiminnallisuuden työstäminen
 
-### 4.1. aika yht. 1h 10 min
+### 4.1. aika yht. 1h 10 min = 70 min
 
 ## 5.1.2016 klo 21.04-23.27 (2h 23 min)
 - palaveroitu työparini kanssa projektin tulevaisuudesta
@@ -105,10 +105,15 @@
 - luettu materiaalia
 - lisätty kommentteja
 
-### 5.1. aika yht. 2h 23 min
+### 5.1. aika yht. 2h 23 min = 143 min
 
 ## 6.1.2016 klo 11.50-12.38 (48 min)
 - palaveroitu työparini kanssa projektin tulevaisuudesta
 - lisätty sovellukseen sovellusikoni
 
-### 6.1. aika yht. 48 min
+## klo 21.04-23.00 (1h 56 min)
+- tutustuttu iOS Developer Libraryn aineistoihin
+- läpikäyty koodia siistimismielessä
+- päivitetty sovellusikoni toimivaksi (ikonin kokoja muokattu)
+
+### 6.1. aika yht. 2h 44 min = 164 min
