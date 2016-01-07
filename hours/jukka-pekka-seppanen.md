@@ -29,10 +29,10 @@
 - Luokkakaavioita ja graafista suunnittelua
 
 
-## 28.12.2015 klo 18.00-21.00 (3h)
+## 28.12.2015 klo 18.00-23.00 (5h)
 - Swift -ohjelmointikielen opiskelua
 
-## 3.1.2015 klo 16.00-20.00 (4h)
+## 3.1.2015 klo 16.00-22.00 (6h)
 - JSON Parse
 
 ## 5.1.2015 klo 16.00-23.00 (7h)
@@ -43,3 +43,5 @@
 
 ## 7.1.2016 klo 15.00-18.00 (3h)
 - Tietojen päivitys 10sec välein ja tietojen validointi
+
+## Yhteensä: 54h
