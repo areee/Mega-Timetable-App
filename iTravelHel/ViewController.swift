@@ -10,6 +10,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import Foundation
 
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     @IBOutlet weak var mapView: MKMapView!
@@ -31,17 +32,18 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
         self.mapView.showsUserLocation = true
+ 
+        //Load annotations in every 15sec
+        NSTimer.scheduledTimerWithTimeInterval(15, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
         
-        backgroundThread(10.0, background: {
-            self.mapView.removeAnnotations(self.mapView.annotations)
-            self.getStopsFromArea()
-        })
+
 
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
     
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -113,7 +115,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             let longitudeString: Double = Double(coorArray [0])!
             let latitudeString: Double = Double(coorArray [1])!
             let stopLocation : CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: latitudeString, longitude: longitudeString)
-            let annotation = MKPointAnnotation()
+            let annotation = CustomPointAnnotation()
             annotation.coordinate = stopLocation
             
             let name = jsonData["stops"]![index]["name"] as! String!
@@ -128,43 +130,36 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                 let info = stopInfo!["stopinfo"]![0]["departures"]!![departureTime]["time"] as! Int!
                let destination = stopInfo!["stopinfo"]![0]["lines"]!![0]
                 var destArray = destination!.componentsSeparatedByString(":")
-                
                 let hours = info / 100
                 let minutes = info - (hours*100)
-                subtitle += "" + String(hours) + ":" + String(minutes) + " " + destArray[1] + "\n"
+                var zero = "";
+                if (minutes < 10){
+                    zero = "0";
+                }
+                subtitle += "" + String(hours) + ":" + zero + String(minutes) + " " + destArray[1] + "\n"
             }
-            print(subtitle)
             let distance = jsonData["stops"]![index]["dist"] as! Int!
-            let timeTableLink = stopInfo!["stopinfo"]![0]["timetable_link"] as! String!
-            annotation.title = name + " (" + String(distance) + " m )"
+            //let timeTableLink = stopInfo!["stopinfo"]![0]["timetable_link"] as! String!
+            annotation.title = name + " (" + String(distance) + "m )"
             annotation.subtitle = subtitle
-            //annotation.subtitle = timeTableLink as! String!
-            mapViews(mapView, viewForAnnotation: annotation).annotation = annotation
+            annotation.imageName = "bus-stop-sign"
             mapView.addAnnotation(annotation)
         }
     }
+
     
-    func mapViews(mapView: MKMapView!,
-        viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
-            let reuseId = "pin"
-            var pinView : MKAnnotationView
-            
-                pinView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
-            pinView.image = UIImage(named:"bus-stop-sign")!
-            
-            return pinView
-    }
-    
-    func backgroundThread(delay: Double = 0.0, background: (() -> Void)? = nil, completion: (() -> Void)? = nil) {
-        dispatch_async(dispatch_get_global_queue(Int(QOS_CLASS_USER_INITIATED.rawValue), 0)) {
-            if(background != nil){ background!(); }
-            
-            let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay * Double(NSEC_PER_SEC)))
-            dispatch_after(popTime, dispatch_get_main_queue()) {
-                if(completion != nil){ completion!(); }
-            }
+    func update(){
+        var newLocation = mapView.userLocation
+        var locationAvailable:Bool!
+        if let theLocation = newLocation.location{
+            self.mapView.removeAnnotations(self.mapView.annotations)
+            self.getStopsFromArea()
         }
+
     }
     
+}
+class CustomPointAnnotation: MKPointAnnotation {
+    var imageName: String!
 }
 

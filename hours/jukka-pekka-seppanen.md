@@ -40,3 +40,6 @@
 
 ## 6.1.2016 klo 15.00-20.00 (5h)
 - Yksittäisen pysäkin tietojen haku
+
+## 7.1.2016 klo 15.00-18.00 (3h)
+- Tietojen päivitys 10sec välein ja tietojen validointi
