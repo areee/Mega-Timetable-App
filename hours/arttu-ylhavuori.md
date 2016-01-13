@@ -118,7 +118,13 @@
 
 ### 6.1. aika yht. 2h 44 min = 164 min
 
-## 13.1.2016 klo 22.08-22.30 (22 min)
+## 13.1.2016 klo 22.08-22.37 (29 min)
 - loppuraportin valmistelua ja kirjoittamista
 
-### 13.1. aika yht. 22 min
+### 13.1. aika yht. 29 min
+
+## Tammikuun ajankäyttö yhteensä:
+- 83+70+143+164+29 (min) = 489 (min) = 8,15 (h)
+
+## Yhteensä:
+- 489+869 (min) = 1358 (min) = 22,6333 (h)
