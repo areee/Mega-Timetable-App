@@ -143,8 +143,14 @@
 - otettu kuvakaappauksia loppuraporttiin, jotka editoitu
 - loppuraportin kirjoittamista
 
+## 15.1.2016 klo 22.04-23.04 (1h)
+- loppuraportin kirjoittamista
+- lisätty loppuraporttiin em. kuvakaappaukset
+
+### 15.1. aika yht. 88+38+60 (min) = 186 (min) = 3h 6 min
+
 ## Tammikuun ajankäyttö yhteensä:
-- 83+70+143+164+29+165 (min) = 654 (min) = 10,9 (h) (päivittämättä)
+- 83+70+143+164+29+165+186 (min) = 840 (min) = 14 (h)
 
 ## Yhteensä:
-- 869+654 (min) = 1523 (min) = 25,3833 (h) (päivittämättä)
+- 869+840 (min) = 1709 (min) = 28,4833 (h)
