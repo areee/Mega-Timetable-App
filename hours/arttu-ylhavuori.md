@@ -132,8 +132,11 @@
 
 ### 14.1. aika yht. 2h 45 min = 165 min
 
-## 15.1.2016 klo 9.15- ()
-- 
+## 15.1.2016 klo 9.15-10.43 (1h 28 min)
+- lisätty kaikki puuttuvat sovellusikonit
+- selvitetty ja korjattu "thread 1: exc_bad_instruction(code=exc_i386_invop,subcode=0x0)" -error
+	- vika olikin debuggauksen paikantamisessa: väärät arvot
+- testattu sovellusta eri sijainneilla -> toimii!
 
 ## Tammikuun ajankäyttö yhteensä:
 - 83+70+143+164+29+165 (min) = 654 (min) = 10,9 (h) (päivittämättä)
