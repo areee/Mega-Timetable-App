@@ -138,6 +138,11 @@
 	- vika olikin debuggauksen paikantamisessa: väärät arvot
 - testattu sovellusta eri sijainneilla -> toimii!
 
+## 15.1.2016 klo 12.45-13.23 (38 min)
+- testattu sovellusta loppuraporttia varten
+- otettu kuvakaappauksia loppuraporttiin, jotka editoitu
+- loppuraportin kirjoittamista
+
 ## Tammikuun ajankäyttö yhteensä:
 - 83+70+143+164+29+165 (min) = 654 (min) = 10,9 (h) (päivittämättä)
 
