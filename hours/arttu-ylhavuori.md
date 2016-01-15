@@ -123,8 +123,20 @@
 
 ### 13.1. aika yht. 29 min
 
+## 14.1.2016 klo 12.30—13.55 (1h 25 min)
+- loppuraportin kirjoittamista
+- errorin paikantamista projektissa
+
+## 14.1.2016 klo 21.30-22.50 (1h 20 min)
+- loppuraportin kirjoittamista
+
+### 14.1. aika yht. 2h 45 min = 165 min
+
+## 15.1.2016 klo 9.15- ()
+- 
+
 ## Tammikuun ajankäyttö yhteensä:
-- 83+70+143+164+29 (min) = 489 (min) = 8,15 (h)
+- 83+70+143+164+29+165 (min) = 654 (min) = 10,9 (h) (päivittämättä)
 
 ## Yhteensä:
-- 489+869 (min) = 1358 (min) = 22,6333 (h)
+- 869+654 (min) = 1523 (min) = 25,3833 (h) (päivittämättä)
